@@ -61,30 +61,11 @@ pokerHand.prototype.replaceCard = function(index, pokerDeck) {
    this.cards[index] = pokerDeck.cards.shift()
 }
 
+pokerHand.prototype.getHandValue = function() {
+   return handType(this)
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
    /* ------------------------------------------------+
    | The handType() function returns a text string of |
    | the type of hand held by 5-card poker hand.      |

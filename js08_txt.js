@@ -91,6 +91,7 @@ function playDrawPoker() {
          }
       }
 
+      statusBox.textContent = myHand.getHandValue()
    });
    
     
@@ -101,7 +102,7 @@ function playDrawPoker() {
       drawButton.disabled = true;         // Turn off the Draw button
       standButton.disabled = true;        // Turn off the Stand Button  
 
-    
+      statusBox.textContent = myHand.getHandValue()
    });
    
    
